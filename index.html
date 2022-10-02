@@ -1,0 +1,30 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+            <span id="countdown"></span>
+            <div class="team">
+                <h3 class="title">HOME</h3>
+                <h1 class="score" id="home-score">0</h1>
+                <button class="add3" onclick="threePoints()">+ 3 Points</button>
+                <button class="add2" onclick="twoPoints()">+ 2 Points</button>
+                <button class="add1" onclick="onePoint()">+ 1 Point</button>
+            </div>
+            
+            <div class="team">
+                <h3 class="title">GUEST</h3>
+                <h1 class="score" id="guest-score">0</h1>
+                <button class="add3" onclick="gThreePoints()">+ 3 Points</button>
+                <button class="add2" onclick="gTwoPoints()">+ 2 Points</button>
+                <button class="add1" onclick="gOnePoint()">+ 1 Point</button>
+            </div>
+            <button id="reset" onclick="window.location.href=window.location.href">Reset</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
