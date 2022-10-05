@@ -1,3 +1,4 @@
+/*Countdown Timer*/
 const startingMinutes = 12;
 let time = startingMinutes * 60;
 
@@ -15,42 +16,35 @@ function updateCountdown() {
     time--;
 }
 
-
+/*Scoring*/
 let homeScore = 0
 let guestScore = 0
 
+const homeScoreCard = document.getElementById("home-score");
+const guestScoreCard = document.getElementById("guest-score");
+
 function threePoints() {
-    homeScore += 3
-    document.getElementById("home-score").innerText = homeScore
+    homeScoreCard.innerHTML = homeScore += 3
+   
 }
 
 function twoPoints() {
-    homeScore += 2
-    document.getElementById("home-score").innerText = homeScore
+    homeScoreCard.innerHTML = homeScore += 2
+    
 }
 
 function onePoint() {
-    homeScore += 1
-    document.getElementById("home-score").innerText = homeScore
+    homeScoreCard.innerHTML = homeScore += 1
 }
 
 function gThreePoints() {
-    guestScore += 3
-    document.getElementById("guest-score").innerText = guestScore
+    guestScoreCard.innerHTML = guestScore += 3
 }
 
 function gTwoPoints() {
-    guestScore += 2
-    document.getElementById("guest-score").innerText = guestScore
+    guestScoreCard.innerHTML = guestScore += 2
 }
 
 function gOnePoint() {
-    guestScore += 1
-    document.getElementById("guest-score").innerText = guestScore
+    guestScoreCard.innerHTML = guestScore += 1
 }
-
-function reset() {
-    
-    document.getElementById("home-score")("guest-score").innerText = 0
-}
-
