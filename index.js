@@ -1,4 +1,5 @@
 /*Countdown Timer*/
+
 const startingMinutes = 12;
 let time = startingMinutes * 60;
 
@@ -17,34 +18,42 @@ function updateCountdown() {
 }
 
 /*Scoring*/
+
 let homeScore = 0
 let guestScore = 0
 
 const homeScoreCard = document.getElementById("home-score");
 const guestScoreCard = document.getElementById("guest-score");
 
+
+function increaseHomeScore(n) {
+    homeScoreCard.innerHTML = homeScore += n
+ }
+
+function increaseGuestScore(n) {
+    guestScoreCard.innerHTML = guestScore += n
+ }
+
 function threePoints() {
-    homeScoreCard.innerHTML = homeScore += 3
-   
+    increaseHomeScore(3);
 }
 
 function twoPoints() {
-    homeScoreCard.innerHTML = homeScore += 2
-    
+    increaseHomeScore(2);  
 }
 
 function onePoint() {
-    homeScoreCard.innerHTML = homeScore += 1
+    increaseHomeScore(1);
 }
 
 function gThreePoints() {
-    guestScoreCard.innerHTML = guestScore += 3
+    increaseGuestScore(3);
 }
 
 function gTwoPoints() {
-    guestScoreCard.innerHTML = guestScore += 2
+    increaseGuestScore(2);
 }
 
 function gOnePoint() {
-    guestScoreCard.innerHTML = guestScore += 1
+    increaseGuestScore(1);
 }

@@ -1,10 +1,3 @@
-/* font-family: 'Alfa Slab One', cursive; */
-/* font-family: 'Anton', sans-serif; */
-/* @font-face{
-    font-family: scoreBoard;
-    src: url("CursedTimerUlil-Aznm.ttf")
-} */
-
 body {
     background-image: url("court.jpg");
     background-color: white;
@@ -52,7 +45,6 @@ body {
     font-size: 40px;
     margin-bottom: 25px;
     margin-top: 0px;
-    
 }
 
 .score {
@@ -71,13 +63,13 @@ body {
 
 button {
     padding: 5px 20px;
+    margin: 10px auto;
     border: 1px solid orange;
     box-shadow: 1px 2px 6px black;
     border-radius: 10px;
     font-size: smaller;
     background-color: orange;
     color: mediumvioletred;
-    margin: auto;
 }
 
 button:hover {
@@ -86,17 +78,18 @@ button:hover {
 }
 
 .add3 {
-    margin: 50px auto 10px auto;
-    
+    margin: 30px auto 10px;
+    padding: 7px 25px;
 }
 
 .add2 {
     margin: 10px auto;
+    padding: 7px 25px;
 }
 
 .add1 {
     margin: 10px auto;
-    padding: 5px 28px;
+    padding: 7px 33px;
 }
 
 #reset {
