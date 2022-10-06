@@ -21,39 +21,14 @@ function updateCountdown() {
 
 let homeScore = 0
 let guestScore = 0
-
 const homeScoreCard = document.getElementById("home-score");
 const guestScoreCard = document.getElementById("guest-score");
 
 
 function increaseHomeScore(n) {
     homeScoreCard.innerHTML = homeScore += n
- }
+}
 
 function increaseGuestScore(n) {
     guestScoreCard.innerHTML = guestScore += n
- }
-
-function threePoints() {
-    increaseHomeScore(3);
-}
-
-function twoPoints() {
-    increaseHomeScore(2);  
-}
-
-function onePoint() {
-    increaseHomeScore(1);
-}
-
-function gThreePoints() {
-    increaseGuestScore(3);
-}
-
-function gTwoPoints() {
-    increaseGuestScore(2);
-}
-
-function gOnePoint() {
-    increaseGuestScore(1);
 }

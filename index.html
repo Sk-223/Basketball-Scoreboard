@@ -11,17 +11,17 @@
             <div class="team">
                 <h3 class="title">HOME</h3>
                 <h1 class="score" id="home-score">0</h1>
-                <button class="add3" onclick="threePoints()">+ 3 Points</button>
-                <button class="add2" onclick="twoPoints()">+ 2 Points</button>
-                <button class="add1" onclick="onePoint()">+ 1 Point </button>
+                <button class="add3" onclick="increaseHomeScore(3)">+ 3 Points</button>
+                <button class="add2" onclick="increaseHomeScore(2)">+ 2 Points</button>
+                <button class="add1" onclick="increaseHomeScore(1)">+ 1 Point </button>
             </div>
             
             <div class="team">
                 <h3 class="title">AWAY</h3>
                 <h1 class="score" id="guest-score">0</h1>
-                <button class="add3" onclick="gThreePoints()">+ 3 Points</button>
-                <button class="add2" onclick="gTwoPoints()">+ 2 Points</button>
-                <button class="add1" onclick="gOnePoint()">+ 1 Point</button>
+                <button class="add3" onclick="increaseGuestScore(3)">+ 3 Points</button>
+                <button class="add2" onclick="increaseGuestScore(2)">+ 2 Points</button>
+                <button class="add1" onclick="increaseGuestScore(1)">+ 1 Point</button>
             </div>
 
             <button id="reset" onclick="window.location.href=window.location.href">Reset</button>
