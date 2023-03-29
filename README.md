@@ -1,9 +1,14 @@
 # Basketball-Scoreboard
 ## Table of contents
+<a name="Languages"></a>
 - [Languages](#Languages)
+<a name="Built-With"></a>
 - [Built With](#Built-With)
+<a name="What-I've-Learned"></a>
 - [What I've Learned](#What-I've-Learned)
+<a name="Acknowledgements"></a>
 - [Acknowledgements](#Acknowledgements)
+<a name="Author"></a>
 - [Author](#Author)
 ## Languages
 - HTML5
